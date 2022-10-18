@@ -43,6 +43,7 @@ public class Fachada {
 			String cidade, String estado, String crv, String especialidade) throws  Exception{
 		DAO.begin();
 		if(daoveterinario.read(crv) != null) {
+			DAO.rollback();
 			throw new RuntimeException("Veterinario j√° existe!");
 		}
 		Veterinario veterinario = new Veterinario(crv, nome, cpf, 
@@ -55,6 +56,7 @@ public class Fachada {
 			String cidade, String estado, int telefone) {
 		DAO.begin();
 		if (daotutor.read(cpf) == null) {
+			DAO.rollback();
 			throw new RuntimeException("Tutor j√° existe!");
 		}
 		Tutor tutor = new Tutor(nome, cpf, new Endereco(rua, bairro, cidade, estado), telefone);
@@ -67,9 +69,11 @@ public class Fachada {
 		DAO.begin();
 		Tutor tutor = daotutor.read(cpf);
 		if (tutor == null) {
+			DAO.rollback();
 			throw new RuntimeException("Tutor n√£o existe!");
 		}
 		if (tutor.getPets().stream().anyMatch(pet -> pet.getNome() == nome)) {
+			DAO.rollback();
 			throw new RuntimeException("Pet j√° existe!");
 		}
 		Pet pet = new Pet(geraIdPet(), nome, especie, raca, sexo, tutor);
@@ -83,10 +87,12 @@ public class Fachada {
 		DAO.begin();
 		Pet pet = daopet.read(codPet);
 		if (pet == null) {
+			DAO.rollback();
 			throw new RuntimeException("Pet n„o existe!");
 		}
 		Veterinario veterinario = daoveterinario.read(crv);
 		if (veterinario == null) {
+			DAO.rollback();
 			throw new RuntimeException("Veterinario n„o existe");
 		}
 		Procedimento procedimento = new Procedimento(geraIdProcedimento(), descricao, 
@@ -131,6 +137,7 @@ public class Fachada {
 		Veterinario veterinario = daoveterinario.read(crv);
 		DAO.commit();
 		if (veterinario == null) {
+			DAO.rollback();
 			throw new RuntimeException("Veterinario n„o existe!");
 		}
 		return veterinario;
@@ -148,6 +155,7 @@ public class Fachada {
 		Tutor tutor = daotutor.read(cpf);
 		DAO.commit();
 		if (tutor == null) {
+			DAO.rollback();
 			throw new RuntimeException("Tutor n„o existe!");
 		}
 		return tutor;
@@ -165,6 +173,7 @@ public class Fachada {
 		Pet pet = daopet.read(id);
 		DAO.commit();
 		if (pet == null) {
+			DAO.rollback();
 			throw new RuntimeException("Pet n„o existe!");
 		}
 		return pet;
@@ -182,9 +191,110 @@ public class Fachada {
 		Procedimento procedimento = daoprocedimento.read(id);
 		DAO.commit();
 		if (procedimento == null) {
+			DAO.rollback();
 			throw new RuntimeException("Procedimento n„o existe!");
 		}
 		return procedimento;
 	}
-
+	
+	public static void deletarVeterinario(String crv) {
+		DAO.begin();
+		Veterinario veterinario = daoveterinario.read(crv);
+		if (veterinario == null) {
+			DAO.rollback();
+			throw new RuntimeException("Veterinario n„o existe!");
+		}
+		List<Procedimento> procedimentos = daoprocedimento.readAll();
+		for(Procedimento procedimento: procedimentos) {
+			if (procedimento.getVeterinario() == veterinario) {
+				procedimento.setVeterinario(null);
+				daoprocedimento.update(procedimento);
+			}
+		}
+		daoveterinario.delete(veterinario);
+		DAO.commit();
+	}
+	
+	public static void deletarTutor(String cpf) {
+		DAO.begin();
+		Tutor tutor = daotutor.read(cpf);
+		if (tutor == null) {
+			DAO.rollback();
+			throw new RuntimeException("Veterinario n„o existe!");
+		}
+		for(Pet pet: tutor.getPets()) {
+			pet.setTutor(null);
+			daopet.update(pet);
+		}
+		daotutor.delete(tutor);
+		DAO.commit();
+	}
+	
+	public static void deletarPet(int id) {
+		DAO.begin();
+		Pet pet = daopet.read(id);
+		if (pet == null) {
+			DAO.rollback();
+			throw new  RuntimeException("Pet n„o existe!");
+		}
+		pet.setTutor(null);
+		pet.setContrato(null);
+		daopet.delete(pet);
+		DAO.commit();
+	}
+	
+	public static void deletarProcedimento(int id) {
+		DAO.begin();
+		Procedimento procedimento = daoprocedimento.read(id);
+		if (procedimento == null) {
+			DAO.rollback();
+			throw new RuntimeException("Procedimento n„o existe!");
+		}
+		procedimento.setPet(null);
+		procedimento.setVeterinario(null);
+		daoprocedimento.delete(procedimento);
+		DAO.commit();
+	}
+	
+	public static void alterarEspecialidadeVeterinario(String crv, String novaEspecialidade) {
+		DAO.begin();
+		Veterinario veterinario = daoveterinario.read(crv);
+		if (veterinario == null) {
+			DAO.rollback();
+			throw new RuntimeException("Veterinario n„o existe!");
+		}
+		veterinario.setEspecialidade(novaEspecialidade);
+		daoveterinario.update(veterinario);
+		DAO.commit();
+	}
+	
+	public static void adicionarPet(String nome, String especie, String raca, String cpf, String sexo,
+			String id, String data, String nomeModalidade, boolean cooparticipacao) {
+		criarPet(nome, especie, raca, cpf, sexo,
+			id, data, nomeModalidade, cooparticipacao);
+	}
+	
+	public static void alterarContratoDoPet(int id, String novaModalidade, boolean cooparticipacao) {
+		DAO.begin();
+		Pet pet = daopet.read(id);
+		if (pet == null) {
+			DAO.rollback();
+			throw new  RuntimeException("Pet n„o existe!");
+		}
+		pet.getContrato().setModalidade(new Modalidade(novaModalidade, cooparticipacao));
+		daopet.update(pet);
+		DAO.commit();
+	}
+	
+	public static void alterarValorDeProcedimento(int id, double novoValor) {
+		DAO.begin();
+		Procedimento procedimento = daoprocedimento.read(id);
+		if (procedimento == null) {
+			DAO.rollback();
+			throw new RuntimeException("Procedimento n„o existe!");
+		}
+		procedimento.setValor(novoValor);
+		daoprocedimento.update(procedimento);
+		DAO.commit();
+	}
 }
