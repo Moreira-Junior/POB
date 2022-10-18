@@ -55,7 +55,7 @@ public class Fachada {
 	public static void criarTutor(String nome, String cpf, String rua, String bairro, 
 			String cidade, String estado, int telefone) {
 		DAO.begin();
-		if (daotutor.read(cpf) == null) {
+		if (daotutor.read(cpf) != null) {
 			DAO.rollback();
 			throw new RuntimeException("Tutor já existe!");
 		}
