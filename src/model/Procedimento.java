@@ -71,5 +71,5 @@ public class Procedimento {
 		return "Procedimento [codigo=" + codigo + ", descricao=" + descricao + ", valor=" + valor + ", pet=" + pet
 				+ ", veterinario=" + veterinario + ", data=" + data + "]";
 	}
-	
+
 }

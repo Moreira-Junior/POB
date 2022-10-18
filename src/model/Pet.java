@@ -11,6 +11,7 @@ public class Pet {
 	private Contrato contrato;
 
 	public Pet(int id, String nome, String especie, String raca, String sexo, Tutor tutor) {
+		this.id = id;
 		this.nome = nome;
 		this.especie = especie;
 		this.raca = raca;
@@ -76,7 +77,7 @@ public class Pet {
 
 	@Override
 	public String toString() {
-		return "Pet [nome=" + nome + ", especie=" + especie + ", raca=" + raca + ", sexo=" + sexo + ", tutor=" + tutor
-				+ ", contrato=" + contrato + "]";
+		return "Pet [id=" + id + ", nome=" + nome + ", especie=" + especie + ", raca=" + raca + ", sexo=" + sexo
+				+ ", tutor=" + tutor.getNome() + ", contrato=" + contrato.getModalidade() + "]";
 	}
 }

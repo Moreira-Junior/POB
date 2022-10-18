@@ -11,7 +11,7 @@ public class DAOPet  extends DAO<Pet>{
 
 	//nome � usado como campo unico 
 	public Pet read (Object chave) {
-		String id = (String) chave;	//casting para o tipo da chave
+		int id = (Integer) chave;	//casting para o tipo da chave
 		Query q = manager.query();
 		q.constrain(Pet.class);
 		q.descend("id").constrain(id);

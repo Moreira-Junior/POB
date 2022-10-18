@@ -31,5 +31,4 @@ public class Modalidade {
 	public String toString() {
 		return "Modalidade [nome=" + nome + ", coparticipacao=" + coparticipacao + "]";
 	}
-	
 }

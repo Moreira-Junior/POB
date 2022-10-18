@@ -11,7 +11,7 @@ public class Tutor extends Pessoa {
 	public Tutor(String nome, String cpf, Endereco endereco, int telefone) {
 		super(nome, cpf, endereco);
 		this.telefone = telefone;
-		pets = new ArrayList<Pet>();
+		this.pets = new ArrayList<Pet>();
 	}
 	
 	public int getTelefone() {
@@ -29,7 +29,7 @@ public class Tutor extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "Tutor [telefone=" + telefone + ", pets=" + pets + "]";
+		return "Tutor [telefone=" + getTelefone() + ", pets=" + getPets() + "]";
 	}
 	
 }

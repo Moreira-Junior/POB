@@ -39,8 +39,8 @@ public class Fachada {
 		DAO.close();
 	}
 	
-	public static void criarVeterinario(String nome, String cpf, String rua, String bairro, 
-			String cidade, String estado, String crv, String especialidade) throws  Exception{
+	public static void criarVeterinario(String crv, String nome, String cpf, String rua, String bairro, 
+			String cidade, String estado, String especialidade) throws  Exception{
 		DAO.begin();
 		if(daoveterinario.read(crv) != null) {
 			DAO.rollback();
@@ -65,7 +65,7 @@ public class Fachada {
 	}
 	
 	public static void criarPet(String nome, String especie, String raca, String cpf, String sexo,
-			String id, String data, String nomeModalidade, boolean cooparticipacao) {
+			String data, String nomeModalidade, boolean cooparticipacao) {
 		DAO.begin();
 		Tutor tutor = daotutor.read(cpf);
 		if (tutor == null) {
@@ -76,9 +76,12 @@ public class Fachada {
 			DAO.rollback();
 			throw new RuntimeException("Pet já existe!");
 		}
-		Pet pet = new Pet(geraIdPet(), nome, especie, raca, sexo, tutor);
-		Contrato contrato = new Contrato(id, data, new Modalidade(nomeModalidade, cooparticipacao), pet);
+		int id = geraIdPet();
+		Pet pet = new Pet(id, nome, especie, raca, sexo, tutor);
+		Contrato contrato = new Contrato(geraIdContrato(), data, new Modalidade(nomeModalidade, cooparticipacao), pet);
 		pet.setContrato(contrato);
+		tutor.getPets().add(pet);
+		daotutor.update(tutor);
 		daopet.create(pet);
 		DAO.commit();
 	}
@@ -110,6 +113,18 @@ public class Fachada {
 		}
 		else {
 			return pets.stream().map(pet -> pet.getId()).max(Integer::compare).get() + 1;
+		}
+	}
+	
+	public static int geraIdContrato() {
+		DAO.begin();
+		List<Contrato> contratos = daocontrato.readAll();
+		DAO.commit();
+		if (contratos.size() == 0) {
+			return 1;
+		}
+		else {
+			return contratos.stream().map(contrato -> contrato.getId()).max(Integer::compare).get() + 1;
 		}
 	}
 	
@@ -161,7 +176,7 @@ public class Fachada {
 		return tutor;
 	}
 	
-	public static List<Pet> listarPet(){
+	public static List<Pet> listarPets(){
 		DAO.begin();
 		List<Pet> pets = daopet.readAll();
 		DAO.commit();
@@ -179,7 +194,7 @@ public class Fachada {
 		return pet;
 	}
 	
-	public static List<Procedimento> listarProcedimento(){
+	public static List<Procedimento> listarProcedimentos(){
 		DAO.begin();
 		List<Procedimento> procedimentos = daoprocedimento.readAll();
 		DAO.commit();
@@ -269,9 +284,9 @@ public class Fachada {
 	}
 	
 	public static void adicionarPet(String nome, String especie, String raca, String cpf, String sexo,
-			String id, String data, String nomeModalidade, boolean cooparticipacao) {
+			String data, String nomeModalidade, boolean cooparticipacao) {
 		criarPet(nome, especie, raca, cpf, sexo,
-			id, data, nomeModalidade, cooparticipacao);
+			data, nomeModalidade, cooparticipacao);
 	}
 	
 	public static void alterarContratoDoPet(int id, String novaModalidade, boolean cooparticipacao) {

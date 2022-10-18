@@ -2,23 +2,23 @@ package model;
 
 public class Contrato {
 
-	private String id;
+	private int id;
 	private String data;
 	private Modalidade modalidade;
 	private Pet pet;
 	
-	public Contrato(String id, String data, Modalidade modalidade, Pet pet) {
+	public Contrato(int id, String data, Modalidade modalidade, Pet pet) {
 		this.id = id;
 		this.data = data;
 		this.modalidade = modalidade;
 		this.pet = pet;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -50,5 +50,4 @@ public class Contrato {
 	public String toString() {
 		return "Contrato [id=" + id + ", data=" + data + ", modalidade=" + modalidade + ", pet=" + pet + "]";
 	}
-	
 }
