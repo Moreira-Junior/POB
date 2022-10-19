@@ -312,4 +312,39 @@ public class Fachada {
 		daoprocedimento.update(procedimento);
 		DAO.commit();
 	}
+	
+	public static List<Veterinario> veterinarioTrechoDeNome(String trechoDeNome){
+		DAO.begin();
+		List<Veterinario> veterinarios = daoveterinario.veterinarioTrechoDeNome(trechoDeNome); 
+		DAO.commit();
+		return veterinarios;
+	}
+	
+	public static List<Veterinario> listarVeterinarioPorEspecialidade(String especialidade){
+		DAO.begin();
+		List<Veterinario> veterinarios = daoveterinario.listarVeterinarioPorEspecialidade(especialidade);
+		DAO.commit();
+		return veterinarios;
+	}
+	
+	public static List<Pet> petsPorRua(String rua){
+		DAO.begin();
+		List<Pet> pets = daopet.petsPorRua(rua);
+		DAO.commit();
+		return pets;
+	}
+	
+	public static List<Procedimento> procedimentosPorPetPorDono(String dono){
+		DAO.begin();
+		List<Procedimento> procedimentos = daoprocedimento.procedimentosPorPetPorDono(dono);
+		DAO.commit();
+		return procedimentos;
+	}
+	
+	public static List<Contrato> contratosPorModalidadePorEstado(String modalidade, String estado){
+		DAO.begin();
+		List<Contrato> contratos = daocontrato.contratosPorModalidadePorEstado(modalidade, estado);
+		DAO.commit();
+		return contratos;
+	}
 }

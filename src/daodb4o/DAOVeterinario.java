@@ -20,5 +20,22 @@ public class DAOVeterinario  extends DAO<Veterinario>{
 			return resultados.get(0);
 		else
 			return null;
-	}}
+	}
+	
+	public List<Veterinario> veterinarioTrechoDeNome(String trechoDeNome){
+		Query q = manager.query();
+		q.constrain(Veterinario.class);  
+		q.descend("nome").constrain(trechoDeNome).startsWith(true);
+		List<Veterinario> resultados = q.execute();
+		return resultados;
+	}
+	
+	public List<Veterinario> listarVeterinarioPorEspecialidade(String especialidade){
+		Query q2 = manager.query();
+		q2.constrain(Veterinario.class);  
+		q2.descend("especialidade").constrain(especialidade);
+		List<Veterinario> resultados2 = q2.execute();
+		return resultados2;
+	}
+}
 	

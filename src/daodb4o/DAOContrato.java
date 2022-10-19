@@ -21,5 +21,14 @@ public class DAOContrato  extends DAO<Contrato>{
 		else
 			return null;
 	}
+	
+	public List<Contrato> contratosPorModalidadePorEstado(String modalidade, String estado){
+		Query q5 = manager.query();
+		q5.constrain(Contrato.class);
+		q5.descend("pet").descend("tutor").descend("endereco").descend("estado").constrain(estado);
+		q5.descend("modalidade").descend("nome").constrain(modalidade);
+		List<Contrato> resultados5 = q5.execute();
+		return resultados5;
+	}
 }
 	

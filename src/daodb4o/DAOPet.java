@@ -20,5 +20,14 @@ public class DAOPet  extends DAO<Pet>{
 			return resultados.get(0);
 		else
 			return null;
-	}}
+	}
+	
+	public List<Pet> petsPorRua(String rua){
+		Query q3 = manager.query();
+		q3.constrain(Pet.class);
+		q3.descend("tutor").descend("endereco").descend("rua").constrain(rua);
+		List<Pet> resultados3 = q3.execute();
+		return resultados3;
+	}
+}
 	

@@ -1,4 +1,4 @@
-package aplicacao;
+package aplicacaoConsole;
 /**********************************
  * IFPB - Curso Superior de Tec. em Sist. para Internet
  * POB - Persistencia de Objetos

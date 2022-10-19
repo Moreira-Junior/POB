@@ -20,5 +20,14 @@ public class DAOProcedimento  extends DAO<Procedimento>{
 			return resultados.get(0);
 		else
 			return null;
-	}}
+	}
+	
+	public List<Procedimento> procedimentosPorPetPorDono(String dono){
+		Query q4 = manager.query();
+		q4.constrain(Procedimento.class);
+		q4.descend("pet").descend("tutor").descend("nome").constrain(dono);
+		List<Procedimento> resultados4 = q4.execute();
+		return resultados4;
+	} 
+}
 	

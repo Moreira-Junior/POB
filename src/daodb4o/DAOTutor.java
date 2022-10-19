@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.db4o.query.Query;
 
-import model.Pessoa;
 import model.Tutor;
 
 public class DAOTutor extends DAO<Tutor>{
