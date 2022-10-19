@@ -91,12 +91,12 @@ public class Fachada {
 		Pet pet = daopet.read(codPet);
 		if (pet == null) {
 			DAO.rollback();
-			throw new RuntimeException("Pet não existe!");
+			throw new RuntimeException("Pet nï¿½o existe!");
 		}
 		Veterinario veterinario = daoveterinario.read(crv);
 		if (veterinario == null) {
 			DAO.rollback();
-			throw new RuntimeException("Veterinario não existe");
+			throw new RuntimeException("Veterinario nï¿½o existe");
 		}
 		Procedimento procedimento = new Procedimento(geraIdProcedimento(), descricao, 
 				valor, pet, veterinario, data);
@@ -154,7 +154,7 @@ public class Fachada {
 		DAO.commit();
 		if (veterinario == null) {
 			DAO.rollback();
-			throw new RuntimeException("Veterinario não existe!");
+			throw new RuntimeException("Veterinario nï¿½o existe!");
 		}
 		return veterinario;
 	}
@@ -172,7 +172,7 @@ public class Fachada {
 		DAO.commit();
 		if (tutor == null) {
 			DAO.rollback();
-			throw new RuntimeException("Tutor não existe!");
+			throw new RuntimeException("Tutor nï¿½o existe!");
 		}
 		return tutor;
 	}
@@ -190,7 +190,7 @@ public class Fachada {
 		DAO.commit();
 		if (pet == null) {
 			DAO.rollback();
-			throw new RuntimeException("Pet não existe!");
+			throw new RuntimeException("Pet nï¿½o existe!");
 		}
 		return pet;
 	}
@@ -208,7 +208,7 @@ public class Fachada {
 		DAO.commit();
 		if (procedimento == null) {
 			DAO.rollback();
-			throw new RuntimeException("Procedimento não existe!");
+			throw new RuntimeException("Procedimento nï¿½o existe!");
 		}
 		return procedimento;
 	}
@@ -218,7 +218,7 @@ public class Fachada {
 		Veterinario veterinario = daoveterinario.read(crv);
 		if (veterinario == null) {
 			DAO.rollback();
-			throw new RuntimeException("Veterinario não existe!");
+			throw new RuntimeException("Veterinario nï¿½o existe!");
 		}
 		List<Procedimento> procedimentos = daoprocedimento.readAll();
 		for(Procedimento procedimento: procedimentos) {
@@ -236,7 +236,7 @@ public class Fachada {
 		Tutor tutor = daotutor.read(cpf);
 		if (tutor == null) {
 			DAO.rollback();
-			throw new RuntimeException("Veterinario não existe!");
+			throw new RuntimeException("Veterinario nï¿½o existe!");
 		}
 		for(Pet pet: tutor.getPets()) {
 			pet.setTutor(null);
@@ -251,9 +251,13 @@ public class Fachada {
 		Pet pet = daopet.read(id);
 		if (pet == null) {
 			DAO.rollback();
-			throw new  RuntimeException("Pet não existe!");
+			throw new  RuntimeException("Pet nï¿½o existe!");
 		}
+		Tutor tutor = pet.getTutor();
+		Contrato contrato = pet.getContrato();
 		pet.getTutor().getPets().remove(pet);
+		daotutor.update(tutor);
+		daocontrato.update(contrato);
 		pet.getContrato().setPet(null);
 		for (Procedimento procedimento: pet.getProcedimentos()) {
 			procedimento.setPet(null);
@@ -267,7 +271,7 @@ public class Fachada {
 		Procedimento procedimento = daoprocedimento.read(id);
 		if (procedimento == null) {
 			DAO.rollback();
-			throw new RuntimeException("Procedimento não existe!");
+			throw new RuntimeException("Procedimento nï¿½o existe!");
 		}
 		procedimento.getPet().setProcedimentos(null);
 		daoprocedimento.delete(procedimento);
@@ -279,7 +283,7 @@ public class Fachada {
 		Veterinario veterinario = daoveterinario.read(crv);
 		if (veterinario == null) {
 			DAO.rollback();
-			throw new RuntimeException("Veterinario não existe!");
+			throw new RuntimeException("Veterinario nï¿½o existe!");
 		}
 		veterinario.setEspecialidade(novaEspecialidade);
 		daoveterinario.update(veterinario);
@@ -297,7 +301,7 @@ public class Fachada {
 		Pet pet = daopet.read(id);
 		if (pet == null) {
 			DAO.rollback();
-			throw new  RuntimeException("Pet não existe!");
+			throw new  RuntimeException("Pet nï¿½o existe!");
 		}
 		pet.getContrato().setModalidade(new Modalidade(novaModalidade, cooparticipacao));
 		daopet.update(pet);
@@ -309,7 +313,7 @@ public class Fachada {
 		Procedimento procedimento = daoprocedimento.read(id);
 		if (procedimento == null) {
 			DAO.rollback();
-			throw new RuntimeException("Procedimento não existe!");
+			throw new RuntimeException("Procedimento nï¿½o existe!");
 		}
 		procedimento.setValor(novoValor);
 		daoprocedimento.update(procedimento);
