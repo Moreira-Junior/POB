@@ -100,6 +100,7 @@ public class Fachada {
 		}
 		Procedimento procedimento = new Procedimento(geraIdProcedimento(), descricao, 
 				valor, pet, veterinario, data);
+		pet.getProcedimentos().add(procedimento);
 		daoprocedimento.create(procedimento);
 		DAO.commit();
 	}
@@ -252,8 +253,11 @@ public class Fachada {
 			DAO.rollback();
 			throw new  RuntimeException("Pet não existe!");
 		}
-		pet.setTutor(null);
-		pet.setContrato(null);
+		pet.getTutor().getPets().remove(pet);
+		pet.getContrato().setPet(null);
+		for (Procedimento procedimento: pet.getProcedimentos()) {
+			procedimento.setPet(null);
+		}
 		daopet.delete(pet);
 		DAO.commit();
 	}
@@ -265,8 +269,7 @@ public class Fachada {
 			DAO.rollback();
 			throw new RuntimeException("Procedimento não existe!");
 		}
-		procedimento.setPet(null);
-		procedimento.setVeterinario(null);
+		procedimento.getPet().setProcedimentos(null);
 		daoprocedimento.delete(procedimento);
 		DAO.commit();
 	}

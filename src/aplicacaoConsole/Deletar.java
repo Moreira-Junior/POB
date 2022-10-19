@@ -16,7 +16,7 @@ public class Deletar {
 		try {
 			Fachada.deletarTutor("123456789");
 			Fachada.deletarVeterinario("123");
-			Fachada.deletarPet(1);			
+			Fachada.deletarPet(2);			
 			Fachada.deletarProcedimento(1);
 			
 		} 

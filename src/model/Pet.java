@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pet {
 	
 	private int id;
@@ -9,6 +12,7 @@ public class Pet {
 	private String sexo;
 	private Tutor tutor;
 	private Contrato contrato;
+	private List<Procedimento> procedimentos;
 
 	public Pet(int id, String nome, String especie, String raca, String sexo, Tutor tutor) {
 		this.id = id;
@@ -17,6 +21,7 @@ public class Pet {
 		this.raca = raca;
 		this.sexo = sexo;
 		this.tutor = tutor;
+		this.procedimentos = new ArrayList<Procedimento>();
 	}
 	
 	public String getNome() {
@@ -73,6 +78,14 @@ public class Pet {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public List<Procedimento> getProcedimentos() {
+		return procedimentos;
+	}
+
+	public void setProcedimentos(List<Procedimento> procedimentos) {
+		this.procedimentos = procedimentos;
 	}
 
 	@Override
