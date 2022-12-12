@@ -1,11 +1,26 @@
 package model;
 
-public class Contrato {
+import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
+@Entity
+public class Contrato {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String data;
+	@Embedded
 	private Modalidade modalidade;
+	@OneToOne()
 	private Pet pet;
+	
+	public Contrato() {
+		
+	}
 	
 	public Contrato(int id, String data, Modalidade modalidade, Pet pet) {
 		this.id = id;

@@ -1,14 +1,27 @@
 package model;
 
-public class Procedimento {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
+@Entity
+public class Procedimento {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
 	private String descricao;
 	private double valor;
+	@ManyToOne
 	private Pet pet;
+	@ManyToOne
 	private Veterinario veterinario;
 	private String data;
 	
+	public Procedimento() {
+	}
+
 	public Procedimento(int codigo, String descricao, double valor, Pet pet, Veterinario veterinario, String data) {
 		this.codigo = codigo;
 		this.descricao = descricao;

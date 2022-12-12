@@ -3,16 +3,34 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+@Entity
 public class Pet {
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nome;
 	private String especie;
 	private String raca;
 	private String sexo;
+	@ManyToOne()
 	private Tutor tutor;
+	@OneToOne(mappedBy = "pet", cascade = {CascadeType.MERGE, CascadeType.PERSIST}, fetch = FetchType.LAZY, orphanRemoval = true)
 	private Contrato contrato;
+	@OneToMany(mappedBy = "pet", cascade = {CascadeType.MERGE, CascadeType.PERSIST}, fetch = FetchType.LAZY, orphanRemoval = true)
 	private List<Procedimento> procedimentos;
+	
+	public Pet() {
+		
+	}
 
 	public Pet(int id, String nome, String especie, String raca, String sexo, Tutor tutor) {
 		this.id = id;

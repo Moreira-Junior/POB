@@ -1,10 +1,17 @@
 package model;
 
+import jakarta.persistence.Embeddable;
+
+@Embeddable
 public class Modalidade {
 
 	
 	private String nome;
 	private boolean coparticipacao;
+	
+	public Modalidade() {
+		
+	}
 	
 	public Modalidade(String nome, boolean coparticipacao) {
 		this.nome = nome;

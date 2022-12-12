@@ -1,12 +1,25 @@
 package model;
 
+import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
 
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class Pessoa {
 	
-	private String nome;
+	@Id
 	private String cpf;
+	private String nome;
+	@Embedded
 	private Endereco endereco;
-
+	
+	public Pessoa() {
+		
+	}
+	
 	public Pessoa(String nome, String cpf, Endereco endereco) {
 		this.nome = nome;
 		this.cpf = cpf;

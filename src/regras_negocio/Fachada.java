@@ -6,14 +6,14 @@ package regras_negocio;
 
 import java.util.List;
 
-import daodb4o.DAO;
-import daodb4o.DAOContrato;
-import daodb4o.DAOEndereco;
-import daodb4o.DAOModalidade;
-import daodb4o.DAOPet;
-import daodb4o.DAOProcedimento;
-import daodb4o.DAOTutor;
-import daodb4o.DAOVeterinario;
+import DAOjpa.DAO;
+import DAOjpa.DAOContrato;
+import DAOjpa.DAOEndereco;
+import DAOjpa.DAOModalidade;
+import DAOjpa.DAOPet;
+import DAOjpa.DAOProcedimento;
+import DAOjpa.DAOTutor;
+import DAOjpa.DAOVeterinario;
 import model.Contrato;
 import model.Endereco;
 import model.Modalidade;

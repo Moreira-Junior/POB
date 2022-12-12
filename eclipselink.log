@@ -1,0 +1,95 @@
+[EL Fine]: server: 2022-12-12 19:55:19.737--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2022-12-12 19:55:19.768--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Pessoa] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.769--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Tutor] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.769--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field pets] is being defaulted to: class model.Pet.
+[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Contrato] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to one mapping element [field pet] is being defaulted to: class model.Pet.
+[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Veterinario] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field procedimentos] is being defaulted to: class model.Procedimento.
+[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Procedimento] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field veterinario] is being defaulted to: class model.Veterinario.
+[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field pet] is being defaulted to: class model.Pet.
+[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Pet] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field procedimentos] is being defaulted to: class model.Procedimento.
+[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to one mapping element [field contrato] is being defaulted to: class model.Contrato.
+[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field tutor] is being defaulted to: class model.Tutor.
+[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Endereco] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Modalidade] is set to [FIELD].
+[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Tutor] is being defaulted to: Tutor.
+[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Pessoa] is being defaulted to: Pessoa.
+[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Pessoa] is being defaulted to: PESSOA.
+[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The discriminator column name for the root inheritance class [model.Pessoa] is being defaulted to: DTYPE.
+[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [cidade] is being defaulted to: CIDADE.
+[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [estado] is being defaulted to: ESTADO.
+[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [bairro] is being defaulted to: BAIRRO.
+[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [rua] is being defaulted to: RUA.
+[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [cpf] is being defaulted to: CPF.
+[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [telefone] is being defaulted to: TELEFONE.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Contrato] is being defaulted to: Contrato.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Contrato] is being defaulted to: CONTRATO.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [coparticipacao] is being defaulted to: COPARTICIPACAO.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Veterinario] is being defaulted to: Veterinario.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [especialidade] is being defaulted to: ESPECIALIDADE.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [crv] is being defaulted to: CRV.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Procedimento] is being defaulted to: Procedimento.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Procedimento] is being defaulted to: PROCEDIMENTO.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [codigo] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [valor] is being defaulted to: VALOR.
+[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [descricao] is being defaulted to: DESCRICAO.
+[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Pet] is being defaulted to: Pet.
+[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Pet] is being defaulted to: PET.
+[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [especie] is being defaulted to: ESPECIE.
+[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [raca] is being defaulted to: RACA.
+[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [sexo] is being defaulted to: SEXO.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field pet] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [pet] is being defaulted to: PET_ID.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field veterinario] is being defaulted to: CPF.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [veterinario] is being defaulted to: VETERINARIO_CPF.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field pet] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [pet] is being defaulted to: PET_ID.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field tutor] is being defaulted to: CPF.
+[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [tutor] is being defaulted to: TUTOR_CPF.
+[EL Info]: 2022-12-12 19:55:19.782--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 3.1.0-M1.v202108080909
+[EL Fine]: connection: 2022-12-12 19:55:19.829--Thread(Thread[AWT-EventQueue-0,6,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Fine]: connection: 2022-12-12 19:55:19.829--ServerSession(1640756896)--Connection(267421866)--Thread(Thread[AWT-EventQueue-0,6,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "postgres"
+	datasource URL=> "jdbc:postgresql://localhost:5432/homeopatas"
+))
+[EL Config]: connection: 2022-12-12 19:55:19.87--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--Connected: jdbc:postgresql://localhost:5432/homeopatas
+	User: postgres
+	Database: PostgreSQL  Version: 14.2
+	Driver: PostgreSQL JDBC Driver  Version: 42.5.0
+[EL Warning]: metadata: 2022-12-12 19:55:19.871--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [contrato] for the entity class [class model.Pet] since weaving was not enabled or did not occur.
+[EL Fine]: connection: 2022-12-12 19:55:19.874--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/junio/Documents/java_curso/projeto2_POB/target/classes/_eclipselink_url=jdbc:postgresql://localhost:5432/homeopatas_user=postgres login successful
+[EL Fine]: sql: 2022-12-12 19:55:19.884--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, TUTOR_CPF FROM PET
+[EL Fine]: sql: 2022-12-12 19:55:19.885--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-12 19:55:19.887--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-12 19:55:19.888--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-12 19:55:19.889--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-12 19:55:19.89--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-12 19:55:19.891--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-12 19:55:19.892--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [423456789, Tutor]
+[EL Fine]: sql: 2022-12-12 19:55:19.893--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-12 19:55:19.893--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [523456789, Tutor]
+[EL Fine]: sql: 2022-12-12 19:55:19.894--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [5]
+[EL Fine]: connection: 2022-12-12 19:55:19.895--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
+[EL Fine]: connection: 2022-12-12 19:55:19.896--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/junio/Documents/java_curso/projeto2_POB/target/classes/_eclipselink_url=jdbc:postgresql://localhost:5432/homeopatas_user=postgres logout successful
+[EL Fine]: connection: 2022-12-12 19:55:19.896--ServerSession(1640756896)--Connection(267421866)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect

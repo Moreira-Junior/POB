@@ -1,11 +1,18 @@
 package model;
 
+import jakarta.persistence.Embeddable;
+
+@Embeddable
 public class Endereco {
 
 	private String rua;
 	private String bairro;
 	private String cidade;
 	private String estado;
+	
+	public Endereco() {
+		
+	}
 
 	public Endereco(String rua, String bairro, String cidade, String estado) {
 		this.rua = rua;
