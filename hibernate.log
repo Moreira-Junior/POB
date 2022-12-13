@@ -1,18 +1,3 @@
-19:54:30,801  INFO DAO:30 - DAO.open - lendo arquivo dados.properties: 
-19:54:30,807  INFO DAO:36 - unidade de persistencia selecionada=> eclipselink
-19:54:30,807  INFO DAO:41 - configurando postgresql
-19:54:41,575  INFO DAO:30 - DAO.open - lendo arquivo dados.properties: 
-19:54:41,576  INFO DAO:36 - unidade de persistencia selecionada=> eclipselink
-19:54:41,577  INFO DAO:41 - configurando postgresql
-19:54:53,150  INFO DAO:30 - DAO.open - lendo arquivo dados.properties: 
-19:54:53,150  INFO DAO:36 - unidade de persistencia selecionada=> eclipselink
-19:54:53,151  INFO DAO:41 - configurando postgresql
-19:55:02,679  INFO DAO:30 - DAO.open - lendo arquivo dados.properties: 
-19:55:02,680  INFO DAO:36 - unidade de persistencia selecionada=> eclipselink
-19:55:02,680  INFO DAO:41 - configurando postgresql
-19:55:13,486  INFO DAO:30 - DAO.open - lendo arquivo dados.properties: 
-19:55:13,487  INFO DAO:36 - unidade de persistencia selecionada=> eclipselink
-19:55:13,487  INFO DAO:41 - configurando postgresql
-19:55:19,725  INFO DAO:30 - DAO.open - lendo arquivo dados.properties: 
-19:55:19,727  INFO DAO:36 - unidade de persistencia selecionada=> eclipselink
-19:55:19,727  INFO DAO:41 - configurando postgresql
+19:49:56,033  INFO DAO:30 - DAO.open - lendo arquivo dados.properties: 
+19:49:56,039  INFO DAO:36 - unidade de persistencia selecionada=> eclipselink
+19:49:56,039  INFO DAO:41 - configurando postgresql

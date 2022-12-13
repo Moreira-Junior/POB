@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Version;
 
 @Entity
 public class Procedimento {
@@ -18,6 +19,8 @@ public class Procedimento {
 	@ManyToOne
 	private Veterinario veterinario;
 	private String data;
+	@Version
+	private Long versao;
 	
 	public Procedimento() {
 	}
@@ -77,6 +80,10 @@ public class Procedimento {
 
 	public void setData(String data) {
 		this.data = data;
+	}
+	
+	public Long getVersao() {
+		return versao;
 	}
 
 	@Override

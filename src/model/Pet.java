@@ -12,6 +12,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.Version;
 @Entity
 public class Pet {
 	@Id
@@ -27,6 +28,8 @@ public class Pet {
 	private Contrato contrato;
 	@OneToMany(mappedBy = "pet", cascade = {CascadeType.MERGE, CascadeType.PERSIST}, fetch = FetchType.LAZY, orphanRemoval = true)
 	private List<Procedimento> procedimentos;
+	@Version
+	private Long versao;
 	
 	public Pet() {
 		
@@ -104,6 +107,10 @@ public class Pet {
 
 	public void setProcedimentos(List<Procedimento> procedimentos) {
 		this.procedimentos = procedimentos;
+	}
+	
+	public Long getVersao() {
+		return versao;
 	}
 
 	@Override

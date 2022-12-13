@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.Version;
 
 @Entity
 public class Contrato {
@@ -17,6 +18,8 @@ public class Contrato {
 	private Modalidade modalidade;
 	@OneToOne()
 	private Pet pet;
+	@Version
+	private Long versao;
 	
 	public Contrato() {
 		
@@ -59,6 +62,10 @@ public class Contrato {
 
 	public void setPet(Pet pet) {
 		this.pet = pet;
+	}
+	
+	public Long getVersao() {
+		return versao;
 	}
 
 	@Override

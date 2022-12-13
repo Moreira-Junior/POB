@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.Version;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -15,6 +16,8 @@ public abstract class Pessoa {
 	private String nome;
 	@Embedded
 	private Endereco endereco;
+	@Version
+	private Long versao;
 	
 	public Pessoa() {
 		
@@ -48,6 +51,10 @@ public abstract class Pessoa {
 
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
+	}
+	
+	public Long getVersao() {
+		return versao;
 	}
 
 	@Override

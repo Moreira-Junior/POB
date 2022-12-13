@@ -1,95 +1,441 @@
-[EL Fine]: server: 2022-12-12 19:55:19.737--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-[EL Config]: metadata: 2022-12-12 19:55:19.768--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Pessoa] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.769--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Tutor] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.769--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field pets] is being defaulted to: class model.Pet.
-[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Contrato] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to one mapping element [field pet] is being defaulted to: class model.Pet.
-[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Veterinario] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field procedimentos] is being defaulted to: class model.Procedimento.
-[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Procedimento] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.77--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field veterinario] is being defaulted to: class model.Veterinario.
-[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field pet] is being defaulted to: class model.Pet.
-[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Pet] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field procedimentos] is being defaulted to: class model.Procedimento.
-[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to one mapping element [field contrato] is being defaulted to: class model.Contrato.
-[EL Config]: metadata: 2022-12-12 19:55:19.771--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field tutor] is being defaulted to: class model.Tutor.
-[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Endereco] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class model.Modalidade] is set to [FIELD].
-[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Tutor] is being defaulted to: Tutor.
-[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Pessoa] is being defaulted to: Pessoa.
-[EL Config]: metadata: 2022-12-12 19:55:19.772--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Pessoa] is being defaulted to: PESSOA.
-[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The discriminator column name for the root inheritance class [model.Pessoa] is being defaulted to: DTYPE.
-[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [cidade] is being defaulted to: CIDADE.
-[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [estado] is being defaulted to: ESTADO.
-[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [bairro] is being defaulted to: BAIRRO.
-[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [rua] is being defaulted to: RUA.
-[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [cpf] is being defaulted to: CPF.
-[EL Config]: metadata: 2022-12-12 19:55:19.773--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [telefone] is being defaulted to: TELEFONE.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Contrato] is being defaulted to: Contrato.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Contrato] is being defaulted to: CONTRATO.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [data] is being defaulted to: DATA.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [coparticipacao] is being defaulted to: COPARTICIPACAO.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2022-12-12 19:55:19.774--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Veterinario] is being defaulted to: Veterinario.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [especialidade] is being defaulted to: ESPECIALIDADE.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [crv] is being defaulted to: CRV.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Procedimento] is being defaulted to: Procedimento.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Procedimento] is being defaulted to: PROCEDIMENTO.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [codigo] is being defaulted to: CODIGO.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [data] is being defaulted to: DATA.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [valor] is being defaulted to: VALOR.
-[EL Config]: metadata: 2022-12-12 19:55:19.775--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [descricao] is being defaulted to: DESCRICAO.
-[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class model.Pet] is being defaulted to: Pet.
-[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class model.Pet] is being defaulted to: PET.
-[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [especie] is being defaulted to: ESPECIE.
-[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [raca] is being defaulted to: RACA.
-[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2022-12-12 19:55:19.776--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [sexo] is being defaulted to: SEXO.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field pet] is being defaulted to: ID.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [pet] is being defaulted to: PET_ID.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field veterinario] is being defaulted to: CPF.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [veterinario] is being defaulted to: VETERINARIO_CPF.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field pet] is being defaulted to: ID.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [pet] is being defaulted to: PET_ID.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field tutor] is being defaulted to: CPF.
-[EL Config]: metadata: 2022-12-12 19:55:19.777--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [tutor] is being defaulted to: TUTOR_CPF.
-[EL Info]: 2022-12-12 19:55:19.782--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 3.1.0-M1.v202108080909
-[EL Fine]: connection: 2022-12-12 19:55:19.829--Thread(Thread[AWT-EventQueue-0,6,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-[EL Fine]: connection: 2022-12-12 19:55:19.829--ServerSession(1640756896)--Connection(267421866)--Thread(Thread[AWT-EventQueue-0,6,main])--connecting(DatabaseLogin(
+[EL Fine]: server: 2022-12-13 19:49:57.174--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2022-12-13 19:49:57.728--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Pessoa] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.798--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Tutor] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.815--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field pets] is being defaulted to: class model.Pet.
+[EL Config]: metadata: 2022-12-13 19:49:57.816--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Contrato] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.818--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field pet] is being defaulted to: class model.Pet.
+[EL Config]: metadata: 2022-12-13 19:49:57.819--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Veterinario] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.819--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field procedimentos] is being defaulted to: class model.Procedimento.
+[EL Config]: metadata: 2022-12-13 19:49:57.82--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Procedimento] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.82--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field veterinario] is being defaulted to: class model.Veterinario.
+[EL Config]: metadata: 2022-12-13 19:49:57.821--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field pet] is being defaulted to: class model.Pet.
+[EL Config]: metadata: 2022-12-13 19:49:57.821--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Pet] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.822--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field procedimentos] is being defaulted to: class model.Procedimento.
+[EL Config]: metadata: 2022-12-13 19:49:57.822--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field contrato] is being defaulted to: class model.Contrato.
+[EL Config]: metadata: 2022-12-13 19:49:57.823--ServerSession(1110095671)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field tutor] is being defaulted to: class model.Tutor.
+[EL Config]: metadata: 2022-12-13 19:49:57.823--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Endereco] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.825--ServerSession(1110095671)--Thread(Thread[main,5,main])--The access type for the persistent class [class model.Modalidade] is set to [FIELD].
+[EL Config]: metadata: 2022-12-13 19:49:57.825--ServerSession(1110095671)--Thread(Thread[main,5,main])--The alias name for the entity class [class model.Tutor] is being defaulted to: Tutor.
+[EL Config]: metadata: 2022-12-13 19:49:57.826--ServerSession(1110095671)--Thread(Thread[main,5,main])--The alias name for the entity class [class model.Pessoa] is being defaulted to: Pessoa.
+[EL Config]: metadata: 2022-12-13 19:49:57.83--ServerSession(1110095671)--Thread(Thread[main,5,main])--The table name for entity [class model.Pessoa] is being defaulted to: PESSOA.
+[EL Config]: metadata: 2022-12-13 19:49:57.839--ServerSession(1110095671)--Thread(Thread[main,5,main])--The discriminator column name for the root inheritance class [model.Pessoa] is being defaulted to: DTYPE.
+[EL Config]: metadata: 2022-12-13 19:49:57.862--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [cidade] is being defaulted to: CIDADE.
+[EL Config]: metadata: 2022-12-13 19:49:57.864--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [estado] is being defaulted to: ESTADO.
+[EL Config]: metadata: 2022-12-13 19:49:57.865--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [bairro] is being defaulted to: BAIRRO.
+[EL Config]: metadata: 2022-12-13 19:49:57.866--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [rua] is being defaulted to: RUA.
+[EL Config]: metadata: 2022-12-13 19:49:57.866--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
+[EL Config]: metadata: 2022-12-13 19:49:57.866--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2022-12-13 19:49:57.867--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [versao] is being defaulted to: VERSAO.
+[EL Config]: metadata: 2022-12-13 19:49:57.87--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [telefone] is being defaulted to: TELEFONE.
+[EL Config]: metadata: 2022-12-13 19:49:57.871--ServerSession(1110095671)--Thread(Thread[main,5,main])--The alias name for the entity class [class model.Contrato] is being defaulted to: Contrato.
+[EL Config]: metadata: 2022-12-13 19:49:57.871--ServerSession(1110095671)--Thread(Thread[main,5,main])--The table name for entity [class model.Contrato] is being defaulted to: CONTRATO.
+[EL Config]: metadata: 2022-12-13 19:49:57.871--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2022-12-13 19:49:57.872--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-13 19:49:57.872--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [versao] is being defaulted to: VERSAO.
+[EL Config]: metadata: 2022-12-13 19:49:57.873--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [coparticipacao] is being defaulted to: COPARTICIPACAO.
+[EL Config]: metadata: 2022-12-13 19:49:57.873--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2022-12-13 19:49:57.873--ServerSession(1110095671)--Thread(Thread[main,5,main])--The alias name for the entity class [class model.Veterinario] is being defaulted to: Veterinario.
+[EL Config]: metadata: 2022-12-13 19:49:57.874--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [especialidade] is being defaulted to: ESPECIALIDADE.
+[EL Config]: metadata: 2022-12-13 19:49:57.874--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [crv] is being defaulted to: CRV.
+[EL Config]: metadata: 2022-12-13 19:49:57.875--ServerSession(1110095671)--Thread(Thread[main,5,main])--The alias name for the entity class [class model.Procedimento] is being defaulted to: Procedimento.
+[EL Config]: metadata: 2022-12-13 19:49:57.875--ServerSession(1110095671)--Thread(Thread[main,5,main])--The table name for entity [class model.Procedimento] is being defaulted to: PROCEDIMENTO.
+[EL Config]: metadata: 2022-12-13 19:49:57.875--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [codigo] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2022-12-13 19:49:57.876--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2022-12-13 19:49:57.876--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [valor] is being defaulted to: VALOR.
+[EL Config]: metadata: 2022-12-13 19:49:57.876--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [versao] is being defaulted to: VERSAO.
+[EL Config]: metadata: 2022-12-13 19:49:57.877--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [descricao] is being defaulted to: DESCRICAO.
+[EL Config]: metadata: 2022-12-13 19:49:57.877--ServerSession(1110095671)--Thread(Thread[main,5,main])--The alias name for the entity class [class model.Pet] is being defaulted to: Pet.
+[EL Config]: metadata: 2022-12-13 19:49:57.877--ServerSession(1110095671)--Thread(Thread[main,5,main])--The table name for entity [class model.Pet] is being defaulted to: PET.
+[EL Config]: metadata: 2022-12-13 19:49:57.878--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [especie] is being defaulted to: ESPECIE.
+[EL Config]: metadata: 2022-12-13 19:49:57.878--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [raca] is being defaulted to: RACA.
+[EL Config]: metadata: 2022-12-13 19:49:57.878--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2022-12-13 19:49:57.878--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-13 19:49:57.879--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [sexo] is being defaulted to: SEXO.
+[EL Config]: metadata: 2022-12-13 19:49:57.879--ServerSession(1110095671)--Thread(Thread[main,5,main])--The column name for element [versao] is being defaulted to: VERSAO.
+[EL Config]: metadata: 2022-12-13 19:49:57.905--ServerSession(1110095671)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field pet] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-13 19:49:57.905--ServerSession(1110095671)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [pet] is being defaulted to: PET_ID.
+[EL Config]: metadata: 2022-12-13 19:49:57.906--ServerSession(1110095671)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field veterinario] is being defaulted to: CPF.
+[EL Config]: metadata: 2022-12-13 19:49:57.906--ServerSession(1110095671)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [veterinario] is being defaulted to: VETERINARIO_CPF.
+[EL Config]: metadata: 2022-12-13 19:49:57.907--ServerSession(1110095671)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field pet] is being defaulted to: ID.
+[EL Config]: metadata: 2022-12-13 19:49:57.907--ServerSession(1110095671)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [pet] is being defaulted to: PET_ID.
+[EL Config]: metadata: 2022-12-13 19:49:57.908--ServerSession(1110095671)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field tutor] is being defaulted to: CPF.
+[EL Config]: metadata: 2022-12-13 19:49:57.908--ServerSession(1110095671)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [tutor] is being defaulted to: TUTOR_CPF.
+[EL Info]: 2022-12-13 19:49:58.114--ServerSession(1110095671)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 3.1.0-M1.v202108080909
+[EL Fine]: connection: 2022-12-13 19:49:58.676--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Fine]: connection: 2022-12-13 19:49:58.696--ServerSession(1110095671)--Connection(183371252)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
 	platform=>PostgreSQLPlatform
 	user name=> "postgres"
 	datasource URL=> "jdbc:postgresql://localhost:5432/homeopatas"
 ))
-[EL Config]: connection: 2022-12-12 19:55:19.87--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--Connected: jdbc:postgresql://localhost:5432/homeopatas
+[EL Config]: connection: 2022-12-13 19:49:58.77--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/homeopatas
 	User: postgres
 	Database: PostgreSQL  Version: 14.2
 	Driver: PostgreSQL JDBC Driver  Version: 42.5.0
-[EL Warning]: metadata: 2022-12-12 19:55:19.871--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [contrato] for the entity class [class model.Pet] since weaving was not enabled or did not occur.
-[EL Fine]: connection: 2022-12-12 19:55:19.874--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/junio/Documents/java_curso/projeto2_POB/target/classes/_eclipselink_url=jdbc:postgresql://localhost:5432/homeopatas_user=postgres login successful
-[EL Fine]: sql: 2022-12-12 19:55:19.884--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, TUTOR_CPF FROM PET
-[EL Fine]: sql: 2022-12-12 19:55:19.885--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+[EL Warning]: metadata: 2022-12-13 19:49:58.788--ServerSession(1110095671)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [contrato] for the entity class [class model.Pet] since weaving was not enabled or did not occur.
+[EL Fine]: connection: 2022-12-13 19:49:58.877--ServerSession(1110095671)--Thread(Thread[main,5,main])--/file:/C:/Users/junio/Documents/java_curso/projeto2_POB/target/classes/_eclipselink_url=jdbc:postgresql://localhost:5432/homeopatas_user=postgres login successful
+[EL Fine]: sql: 2022-12-13 19:49:58.999--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--CREATE TABLE PESSOA (CPF VARCHAR(255) NOT NULL, DTYPE VARCHAR(31), NOME VARCHAR(255), VERSAO BIGINT, BAIRRO VARCHAR(255), CIDADE VARCHAR(255), ESTADO VARCHAR(255), RUA VARCHAR(255), TELEFONE INTEGER, CRV VARCHAR(255), ESPECIALIDADE VARCHAR(255), PRIMARY KEY (CPF))
+[EL Fine]: sql: 2022-12-13 19:49:59.095--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--CREATE TABLE CONTRATO (ID  SERIAL NOT NULL, DATA VARCHAR(255), VERSAO BIGINT, COPARTICIPACAO BOOLEAN, NOME VARCHAR(255), PET_ID INTEGER, PRIMARY KEY (ID))
+[EL Fine]: sql: 2022-12-13 19:49:59.117--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--CREATE TABLE PET (ID  SERIAL NOT NULL, ESPECIE VARCHAR(255), NOME VARCHAR(255), RACA VARCHAR(255), SEXO VARCHAR(255), VERSAO BIGINT, TUTOR_CPF VARCHAR(255), PRIMARY KEY (ID))
+[EL Fine]: sql: 2022-12-13 19:49:59.13--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--CREATE TABLE PROCEDIMENTO (CODIGO  SERIAL NOT NULL, DATA VARCHAR(255), DESCRICAO VARCHAR(255), VALOR FLOAT, VERSAO BIGINT, PET_ID INTEGER, VETERINARIO_CPF VARCHAR(255), PRIMARY KEY (CODIGO))
+[EL Fine]: sql: 2022-12-13 19:49:59.141--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--ALTER TABLE CONTRATO ADD CONSTRAINT FK_CONTRATO_PET_ID FOREIGN KEY (PET_ID) REFERENCES PET (ID)
+[EL Fine]: sql: 2022-12-13 19:49:59.152--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--ALTER TABLE PET ADD CONSTRAINT FK_PET_TUTOR_CPF FOREIGN KEY (TUTOR_CPF) REFERENCES PESSOA (CPF)
+[EL Fine]: sql: 2022-12-13 19:49:59.157--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--ALTER TABLE PROCEDIMENTO ADD CONSTRAINT FK_PROCEDIMENTO_PET_ID FOREIGN KEY (PET_ID) REFERENCES PET (ID)
+[EL Fine]: sql: 2022-12-13 19:49:59.159--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--ALTER TABLE PROCEDIMENTO ADD CONSTRAINT FK_PROCEDIMENTO_VETERINARIO_CPF FOREIGN KEY (VETERINARIO_CPF) REFERENCES PESSOA (CPF)
+[EL Fine]: sql: 2022-12-13 19:49:59.707--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
 	bind => [123456789, Tutor]
-[EL Fine]: sql: 2022-12-12 19:55:19.887--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
-	bind => [1]
-[EL Fine]: sql: 2022-12-12 19:55:19.888--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+[EL Fine]: sql: 2022-12-13 19:49:59.738--ClientSession(887438338)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, NOME, TELEFONE, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [123456789, Ana Beatriz1, 1111111, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 1, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.75--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
 	bind => [223456789, Tutor]
-[EL Fine]: sql: 2022-12-12 19:55:19.889--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
-	bind => [2]
-[EL Fine]: sql: 2022-12-12 19:55:19.89--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+[EL Fine]: sql: 2022-12-13 19:49:59.751--ClientSession(2125952195)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, NOME, TELEFONE, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [223456789, Ana Beatriz2, 2111111, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 2, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.754--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
 	bind => [323456789, Tutor]
-[EL Fine]: sql: 2022-12-12 19:55:19.891--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
-	bind => [3]
-[EL Fine]: sql: 2022-12-12 19:55:19.892--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+[EL Fine]: sql: 2022-12-13 19:49:59.756--ClientSession(1315430544)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, NOME, TELEFONE, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [323456789, Ana Beatriz3, 3111111, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 3, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.758--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
 	bind => [423456789, Tutor]
-[EL Fine]: sql: 2022-12-12 19:55:19.893--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
-	bind => [4]
-[EL Fine]: sql: 2022-12-12 19:55:19.893--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, DTYPE, NOME, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+[EL Fine]: sql: 2022-12-13 19:49:59.76--ClientSession(1917593312)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, NOME, TELEFONE, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [423456789, Ana Beatriz4, 4111111, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 4, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.764--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
 	bind => [523456789, Tutor]
-[EL Fine]: sql: 2022-12-12 19:55:19.894--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT ID, DATA, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+[EL Fine]: sql: 2022-12-13 19:49:59.766--ClientSession(456824281)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, NOME, TELEFONE, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [523456789, Ana Beatriz5, 5111111, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 5, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.772--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [123, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.774--ClientSession(312362475)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, CRV, ESPECIALIDADE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1234567, 123, POO1, Fausto1, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 6, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.777--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [223, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.779--ClientSession(140468053)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, CRV, ESPECIALIDADE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2234567, 223, POO2, Fausto2, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 7, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.782--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [323, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.784--ClientSession(1416656186)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, CRV, ESPECIALIDADE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3234567, 323, POO3, Fausto3, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 8, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.787--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [423, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.788--ClientSession(857865061)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, CRV, ESPECIALIDADE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [4234567, 423, POO4, Fausto4, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 9, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.79--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [523, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.792--ClientSession(613097617)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PESSOA (CPF, CRV, ESPECIALIDADE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, DTYPE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [5234567, 523, POO5, Fausto5, 1, Jaguaribe, Joao Pessoa, Paraiba, Rua 10, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:49:59.794--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.801--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [123456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.814--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET
+[EL Fine]: sql: 2022-12-13 19:49:59.816--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO
+[EL Fine]: sql: 2022-12-13 19:49:59.825--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.827--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [123456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.829--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.831--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.837--ClientSession(2055152199)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PET (ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [cachorro, Panqueca1, pitbull, femea, 1, 123456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.84--ClientSession(2055152199)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.843--ClientSession(2055152199)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO CONTRATO (DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [11/11/2011, 1, true, basico, 1]
+[EL Fine]: sql: 2022-12-13 19:49:59.845--ClientSession(2055152199)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.848--ClientSession(2055152199)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.85--ClientSession(2055152199)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [223456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.852--ClientSession(2055152199)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET
+[EL Fine]: sql: 2022-12-13 19:49:59.858--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO
+[EL Fine]: sql: 2022-12-13 19:49:59.861--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.863--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.865--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.868--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.87--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [223456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.871--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.872--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.873--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PET (ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [cachorro, Pimentinha, beagle, femea, 1, 223456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.874--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.875--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO CONTRATO (DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [12/11/2011, 1, true, intermediario, 2]
+[EL Fine]: sql: 2022-12-13 19:49:59.876--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.877--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.878--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [323456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.879--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET
+[EL Fine]: sql: 2022-12-13 19:49:59.88--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.881--ClientSession(645038677)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.884--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO
+[EL Fine]: sql: 2022-12-13 19:49:59.887--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.888--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.889--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.889--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.89--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.891--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.892--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.893--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [323456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.894--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:49:59.895--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:49:59.897--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PET (ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [cachorro, Panqueca3, pitbull, femea, 1, 323456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.898--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.899--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO CONTRATO (DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [13/11/2011, 1, true, completo, 3]
+[EL Fine]: sql: 2022-12-13 19:49:59.9--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.901--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [423456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.902--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [423456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.903--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET
+[EL Fine]: sql: 2022-12-13 19:49:59.904--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.905--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.907--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.907--ClientSession(984138551)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.959--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO
+[EL Fine]: sql: 2022-12-13 19:49:59.96--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.961--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.962--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.963--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.964--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.965--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.966--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:49:59.967--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.967--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:49:59.969--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [423456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.969--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [423456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.97--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:49:59.971--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:49:59.973--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PET (ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [cachorro, Panqueca4, pitbull, femea, 1, 423456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.974--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.975--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO CONTRATO (DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [14/11/2011, 1, false, basico, 4]
+[EL Fine]: sql: 2022-12-13 19:49:59.976--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:49:59.977--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [523456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.977--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [523456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.979--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET
+[EL Fine]: sql: 2022-12-13 19:49:59.979--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.98--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.981--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.982--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.983--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.984--ClientSession(1475186581)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:49:59.987--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO
+[EL Fine]: sql: 2022-12-13 19:49:59.988--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.988--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.989--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:49:59.99--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.991--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.991--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:49:59.992--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:49:59.993--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.994--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:49:59.995--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:49:59.996--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [423456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.996--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:49:59.998--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [523456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:49:59.999--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (TUTOR_CPF = ?)
+	bind => [523456789]
+[EL Fine]: sql: 2022-12-13 19:49:59.999--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
 	bind => [5]
-[EL Fine]: connection: 2022-12-12 19:55:19.895--ServerSession(1640756896)--Connection(1773043298)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
-[EL Fine]: connection: 2022-12-12 19:55:19.896--ServerSession(1640756896)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/C:/Users/junio/Documents/java_curso/projeto2_POB/target/classes/_eclipselink_url=jdbc:postgresql://localhost:5432/homeopatas_user=postgres logout successful
-[EL Fine]: connection: 2022-12-12 19:55:19.896--ServerSession(1640756896)--Connection(267421866)--Thread(Thread[AWT-EventQueue-0,6,main])--disconnect
+[EL Fine]: sql: 2022-12-13 19:50:00.0--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (ID = ?)
+	bind => [5]
+[EL Fine]: sql: 2022-12-13 19:50:00.004--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PET (ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [cachorro, Panqueca5, pitbull, femea, 1, 523456789]
+[EL Fine]: sql: 2022-12-13 19:50:00.005--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:50:00.006--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO CONTRATO (DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [15/11/2011, 1, false, intermediario, 5]
+[EL Fine]: sql: 2022-12-13 19:50:00.007--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:50:00.008--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.009--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.01--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.011--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [123, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.013--ClientSession(1837143790)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO
+[EL Fine]: sql: 2022-12-13 19:50:00.016--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.017--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.019--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF FROM PESSOA WHERE (((CPF = ?) AND (DTYPE = ?)) AND (DTYPE = ?))
+	bind => [1234567, Veterinario, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.023--ClientSession(1174737513)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PROCEDIMENTO (DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [21/05/2022, descricao1, 10.0, 1, 1, 1234567]
+[EL Fine]: sql: 2022-12-13 19:50:00.025--ClientSession(1174737513)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:50:00.026--ClientSession(1174737513)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.026--ClientSession(1174737513)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.027--ClientSession(1174737513)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.028--ClientSession(1174737513)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [223, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.029--ClientSession(1174737513)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO
+[EL Fine]: sql: 2022-12-13 19:50:00.032--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.033--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.034--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF FROM PESSOA WHERE (((CPF = ?) AND (DTYPE = ?)) AND (DTYPE = ?))
+	bind => [2234567, Veterinario, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.035--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PROCEDIMENTO (DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [22/05/2022, descricao2, 11.0, 1, 2, 2234567]
+[EL Fine]: sql: 2022-12-13 19:50:00.037--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:50:00.038--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:50:00.039--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.04--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:50:00.041--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [323, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.042--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO
+[EL Fine]: sql: 2022-12-13 19:50:00.043--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.044--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.045--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.047--ClientSession(354230638)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [1234567, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.049--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO WHERE (PET_ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:50:00.05--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID FROM PET WHERE (ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:50:00.051--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF FROM PESSOA WHERE (((CPF = ?) AND (DTYPE = ?)) AND (DTYPE = ?))
+	bind => [3234567, Veterinario, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.053--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PROCEDIMENTO (DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [23/05/2022, descricao3, 12.0, 1, 3, 3234567]
+[EL Fine]: sql: 2022-12-13 19:50:00.054--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:50:00.055--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:50:00.055--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [423456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.056--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:50:00.057--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [423, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.058--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO
+[EL Fine]: sql: 2022-12-13 19:50:00.058--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.059--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.06--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.061--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [1234567, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.062--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.063--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.064--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.065--ClientSession(464094472)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [2234567, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.067--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO WHERE (PET_ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:50:00.068--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID FROM PET WHERE (ID = ?)
+	bind => [4]
+[EL Fine]: sql: 2022-12-13 19:50:00.07--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF FROM PESSOA WHERE (((CPF = ?) AND (DTYPE = ?)) AND (DTYPE = ?))
+	bind => [4234567, Veterinario, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.071--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--INSERT INTO PROCEDIMENTO (DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [24/05/2022, descricao4, 13.0, 1, 4, 4234567]
+[EL Fine]: sql: 2022-12-13 19:50:00.072--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2022-12-13 19:50:00.073--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [5]
+[EL Fine]: sql: 2022-12-13 19:50:00.073--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [523456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.074--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [5]
+[EL Fine]: sql: 2022-12-13 19:50:00.075--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CRV = ?) AND (DTYPE = ?))
+	bind => [523, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.077--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO
+[EL Fine]: sql: 2022-12-13 19:50:00.079--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.08--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [123456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.081--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [1]
+[EL Fine]: sql: 2022-12-13 19:50:00.082--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [1234567, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.084--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.085--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [223456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.085--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [2]
+[EL Fine]: sql: 2022-12-13 19:50:00.087--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [2234567, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.088--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, ESPECIE, NOME, RACA, SEXO, VERSAO, TUTOR_CPF FROM PET WHERE (ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:50:00.089--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, TELEFONE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [323456789, Tutor]
+[EL Fine]: sql: 2022-12-13 19:50:00.09--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT ID, DATA, VERSAO, COPARTICIPACAO, NOME, PET_ID FROM CONTRATO WHERE (PET_ID = ?)
+	bind => [3]
+[EL Fine]: sql: 2022-12-13 19:50:00.09--ClientSession(454167880)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CPF, DTYPE, NOME, VERSAO, BAIRRO, CIDADE, ESTADO, RUA, CRV, ESPECIALIDADE FROM PESSOA WHERE ((CPF = ?) AND (DTYPE = ?))
+	bind => [3234567, Veterinario]
+[EL Fine]: sql: 2022-12-13 19:50:00.093--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--SELECT CODIGO, DATA, DESCRICAO, VALOR, VERSAO, PET_ID, VETERINARIO_CPF FROM PROCEDIMENTO WHERE (PET_ID = ?)
+	bind => [5]
+[EL Fine]: connection: 2022-12-13 19:50:00.094--ServerSession(1110095671)--Connection(726149546)--Thread(Thread[main,5,main])--disconnect
+[EL Fine]: connection: 2022-12-13 19:50:00.095--ServerSession(1110095671)--Thread(Thread[main,5,main])--/file:/C:/Users/junio/Documents/java_curso/projeto2_POB/target/classes/_eclipselink_url=jdbc:postgresql://localhost:5432/homeopatas_user=postgres logout successful
+[EL Fine]: connection: 2022-12-13 19:50:00.095--ServerSession(1110095671)--Connection(183371252)--Thread(Thread[main,5,main])--disconnect
