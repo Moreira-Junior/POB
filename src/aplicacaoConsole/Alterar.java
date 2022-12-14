@@ -6,12 +6,10 @@ package aplicacaoConsole;
  *
  */
 
-import com.db4o.ObjectContainer;
 
 import regras_negocio.Fachada;
 
 public class Alterar {
-	protected ObjectContainer manager;
 
 	public Alterar(){
 		Fachada.inicializar();
